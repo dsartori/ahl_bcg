@@ -7,10 +7,10 @@ The games are meant to run with Vintage BASIC, but if you are able to use them w
 
 ## Fork Purpose
 
-This fork adds modern infrastructure and implementations to make these classic games more accessible:
+This fork adds a little infrastructure to make these classic games more accessible, and has some interesting ports:
 
 - **Docker Infrastructure**: Run the original BASIC games in a containerized environment with PC-BASIC interpreter
-- **Ports Folder**: Modern language implementations of the games (currently Python examples)
+- **Ports Folder**: Modern language implementations of the games 
 - **Goal**: Preserve these historic games while making them playable on modern systems
 
 ## Usage

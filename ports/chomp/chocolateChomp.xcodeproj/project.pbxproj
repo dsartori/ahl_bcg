@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* chocolateChompAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* chocolateChompAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* chocolateChompViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* chocolateChompViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* chocolateChompViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* chocolateChompViewController.m */; };
+		91820123128E2A83001FBDE0 /* emptycrumb40.png in Resources */ = {isa = PBXBuildFile; fileRef = 91820122128E2A83001FBDE0 /* emptycrumb40.png */; };
+		91820143128E2BA2001FBDE0 /* empty40.png in Resources */ = {isa = PBXBuildFile; fileRef = 91820142128E2BA2001FBDE0 /* empty40.png */; };
+		91820197128E30B3001FBDE0 /* info.m in Sources */ = {isa = PBXBuildFile; fileRef = 91820196128E30B3001FBDE0 /* info.m */; };
+		918201FE128E58D1001FBDE0 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 918201FD128E58D1001FBDE0 /* index.html */; };
+		9182041F128FB550001FBDE0 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9182041E128FB550001FBDE0 /* MainWindow-iPad.xib */; };
+		91AA9AFE12865406008F8A1A /* GOLGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AA9AFB12865406008F8A1A /* GOLGrid.m */; };
+		91AA9AFF12865406008F8A1A /* GOLCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AA9AFD12865406008F8A1A /* GOLCell.m */; };
+		91AA9B0612865444008F8A1A /* gameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AA9B0512865444008F8A1A /* gameView.m */; };
+		91AA9B0E128654A8008F8A1A /* cell40.png in Resources */ = {isa = PBXBuildFile; fileRef = 91AA9B08128654A8008F8A1A /* cell40.png */; };
+		91AA9B10128654A8008F8A1A /* empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 91AA9B0A128654A8008F8A1A /* empty.png */; };
+		91AA9B11128654A8008F8A1A /* cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 91AA9B0B128654A8008F8A1A /* cell.png */; };
+		91AA9B12128654A8008F8A1A /* empty20.png in Resources */ = {isa = PBXBuildFile; fileRef = 91AA9B0C128654A8008F8A1A /* empty20.png */; };
+		91AA9B13128654A8008F8A1A /* cell20.png in Resources */ = {isa = PBXBuildFile; fileRef = 91AA9B0D128654A8008F8A1A /* cell20.png */; };
+		91AA9C6E1286FF71008F8A1A /* chomp.caf in Resources */ = {isa = PBXBuildFile; fileRef = 91AA9C6D1286FF71008F8A1A /* chomp.caf */; };
+		91AA9C7F12870054008F8A1A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AA9C7E12870054008F8A1A /* AudioToolbox.framework */; };
+		91AD327D129784B10069D4C0 /* pcell40.png in Resources */ = {isa = PBXBuildFile; fileRef = 91AD327C129784B10069D4C0 /* pcell40.png */; };
+		91AD34B71298B66D0069D4C0 /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 91AD34B61298B66D0069D4C0 /* paper.png */; };
+		91AD34E41298EA520069D4C0 /* panel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AD34E31298EA520069D4C0 /* panel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* chocolateChompAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chocolateChompAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* chocolateChompAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chocolateChompAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* chocolateChomp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chocolateChomp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* chocolateChompViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = chocolateChompViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* chocolateChompViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chocolateChompViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* chocolateChompViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chocolateChompViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* chocolateChomp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chocolateChomp_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* chocolateChomp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "chocolateChomp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		91820122128E2A83001FBDE0 /* emptycrumb40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emptycrumb40.png; sourceTree = "<group>"; };
+		91820142128E2BA2001FBDE0 /* empty40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty40.png; sourceTree = "<group>"; };
+		91820195128E30B3001FBDE0 /* info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = info.h; sourceTree = "<group>"; };
+		91820196128E30B3001FBDE0 /* info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = info.m; sourceTree = "<group>"; };
+		918201FD128E58D1001FBDE0 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		9182041E128FB550001FBDE0 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "Resources-iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		91AA9AFA12865406008F8A1A /* GOLGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOLGrid.h; sourceTree = "<group>"; };
+		91AA9AFB12865406008F8A1A /* GOLGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOLGrid.m; sourceTree = "<group>"; };
+		91AA9AFC12865406008F8A1A /* GOLCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOLCell.h; sourceTree = "<group>"; };
+		91AA9AFD12865406008F8A1A /* GOLCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOLCell.m; sourceTree = "<group>"; };
+		91AA9B0412865444008F8A1A /* gameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameView.h; sourceTree = "<group>"; };
+		91AA9B0512865444008F8A1A /* gameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gameView.m; sourceTree = "<group>"; };
+		91AA9B08128654A8008F8A1A /* cell40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell40.png; sourceTree = "<group>"; };
+		91AA9B0A128654A8008F8A1A /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty.png; sourceTree = "<group>"; };
+		91AA9B0B128654A8008F8A1A /* cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell.png; sourceTree = "<group>"; };
+		91AA9B0C128654A8008F8A1A /* empty20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty20.png; sourceTree = "<group>"; };
+		91AA9B0D128654A8008F8A1A /* cell20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell20.png; sourceTree = "<group>"; };
+		91AA9C6D1286FF71008F8A1A /* chomp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chomp.caf; sourceTree = "<group>"; };
+		91AA9C7E12870054008F8A1A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		91AD327C129784B10069D4C0 /* pcell40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pcell40.png; sourceTree = "<group>"; };
+		91AD34B61298B66D0069D4C0 /* paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.png; sourceTree = "<group>"; };
+		91AD34E21298EA520069D4C0 /* panel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = panel.h; sourceTree = "<group>"; };
+		91AD34E31298EA520069D4C0 /* panel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = panel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				91AA9C7F12870054008F8A1A /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				91AA9B0412865444008F8A1A /* gameView.h */,
+				91AA9B0512865444008F8A1A /* gameView.m */,
+				91AA9AFA12865406008F8A1A /* GOLGrid.h */,
+				91AA9AFB12865406008F8A1A /* GOLGrid.m */,
+				91AA9AFC12865406008F8A1A /* GOLCell.h */,
+				91AA9AFD12865406008F8A1A /* GOLCell.m */,
+				1D3623240D0F684500981E51 /* chocolateChompAppDelegate.h */,
+				1D3623250D0F684500981E51 /* chocolateChompAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* chocolateChompViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* chocolateChompViewController.m */,
+				91AD34E21298EA520069D4C0 /* panel.h */,
+				91AD34E31298EA520069D4C0 /* panel.m */,
+				91820195128E30B3001FBDE0 /* info.h */,
+				91820196128E30B3001FBDE0 /* info.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* chocolateChomp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				9182041D128FB54F001FBDE0 /* Resources-iPad */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* chocolateChomp_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				918201FD128E58D1001FBDE0 /* index.html */,
+				91AD34B61298B66D0069D4C0 /* paper.png */,
+				91AA9C6D1286FF71008F8A1A /* chomp.caf */,
+				91AA9B07128654A8008F8A1A /* cells */,
+				2899E5210DE3E06400AC0155 /* chocolateChompViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* chocolateChomp-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91AA9C7E12870054008F8A1A /* AudioToolbox.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9182041D128FB54F001FBDE0 /* Resources-iPad */ = {
+			isa = PBXGroup;
+			children = (
+				9182041E128FB550001FBDE0 /* MainWindow-iPad.xib */,
+			);
+			name = "Resources-iPad";
+			sourceTree = "<group>";
+		};
+		91AA9B07128654A8008F8A1A /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				91AA9B08128654A8008F8A1A /* cell40.png */,
+				91AA9B0A128654A8008F8A1A /* empty.png */,
+				91AD327C129784B10069D4C0 /* pcell40.png */,
+				91820142128E2BA2001FBDE0 /* empty40.png */,
+				91820122128E2A83001FBDE0 /* emptycrumb40.png */,
+				91AA9B0B128654A8008F8A1A /* cell.png */,
+				91AA9B0C128654A8008F8A1A /* empty20.png */,
+				91AA9B0D128654A8008F8A1A /* cell20.png */,
+			);
+			name = cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* chocolateChomp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "chocolateChomp" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = chocolateChomp;
+			productName = chocolateChomp;
+			productReference = 1D6058910D05DD3D006BFB54 /* chocolateChomp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "chocolateChomp" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* chocolateChomp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* chocolateChompViewController.xib in Resources */,
+				91AA9B0E128654A8008F8A1A /* cell40.png in Resources */,
+				91AA9B10128654A8008F8A1A /* empty.png in Resources */,
+				91AA9B11128654A8008F8A1A /* cell.png in Resources */,
+				91AA9B12128654A8008F8A1A /* empty20.png in Resources */,
+				91AA9B13128654A8008F8A1A /* cell20.png in Resources */,
+				91AA9C6E1286FF71008F8A1A /* chomp.caf in Resources */,
+				91820123128E2A83001FBDE0 /* emptycrumb40.png in Resources */,
+				91820143128E2BA2001FBDE0 /* empty40.png in Resources */,
+				918201FE128E58D1001FBDE0 /* index.html in Resources */,
+				9182041F128FB550001FBDE0 /* MainWindow-iPad.xib in Resources */,
+				91AD327D129784B10069D4C0 /* pcell40.png in Resources */,
+				91AD34B71298B66D0069D4C0 /* paper.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* chocolateChompAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* chocolateChompViewController.m in Sources */,
+				91AA9AFE12865406008F8A1A /* GOLGrid.m in Sources */,
+				91AA9AFF12865406008F8A1A /* GOLCell.m in Sources */,
+				91AA9B0612865444008F8A1A /* gameView.m in Sources */,
+				91820197128E30B3001FBDE0 /* info.m in Sources */,
+				91AD34E41298EA520069D4C0 /* panel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = chocolateChomp_Prefix.pch;
+				INFOPLIST_FILE = "chocolateChomp-Info.plist";
+				PRODUCT_NAME = chocolateChomp;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = chocolateChomp_Prefix.pch;
+				INFOPLIST_FILE = "chocolateChomp-Info.plist";
+				PRODUCT_NAME = chocolateChomp;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "chocolateChomp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "chocolateChomp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

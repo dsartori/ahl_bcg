@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1038.32">
+  
+  <!--body {background-image:url('paper.jpg');}-->
+  <style type="text/css">
+	
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px AppleGothic}
+	li.l1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px AppleGothic}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px AppleGothic; min-height: 14.0px}
+	p.h1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px AppleGothic; min-height: 28.0px;}
+	p.h2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px AppleGothic; min-height: 18.0px;}
+  </style>
+</head>
+<body >
+<p class="h1">Chocolate Chomp</p>
+<p class="p2"><br></p>
+<!--<p class="h2"><a href="#TheGame">The Game</a>
+<p class="h2"><a href="#Math">The Math</a>
+<p class="h2"><a href="#Strategy">Strategy</a>-->
+<p class="h2" id="#TheGame"><br>The Game<br></p>
+<p class="p1"><br>Chomp is a simple two-player strategy game which takes place on a rectangular grid of squares.  
+			  This grid represents a chocolate bar which has one "poisoned" piece in the upper-left hand corner.   Players alternately 
+			  touch squares on the chocolate bar to take bites.  When you take a bite, all of the squares below and to the right of your
+			  chosen piece are "chomped."  The player who is forced to eat the poisoned piece loses, ending the game.</p><br>
+<p class="p1">The version of Chomp you are playing can be played against a friend, solo against the computer, or you can watch the 
+			  computer play both sides of the game.  By selecting different board dimensions you can explore the different properties 
+			  and winning conditions of the game.</p><br>
+<p class="p1">Chocolate Chomp is an implementation of the game Chomp, described by mathematician David Gale in 1974.  
+			  Gale described the winning strategies for two small Chomp boards, as discussed below.</p>
+
+<p class="h2" id="#Math"><br>The Math<br></p>
+<p class="p1"><br>Chomp is an example of a <i>combinatorial game</i>.  Chess, checkers and tic-tac-toe are all combinatorial games.</p>
+<p class="p1">All combinatorial games have these characteristics in common:</p>
+<ul >
+	<li class="l1"><i>Two player.</i></li>
+	<li class="l1"><i>Perfect information.</i>There is no information hidden from either player.</li>
+	<li class="l1"><i>No chance moves.</i>There are no dice,spinners or other randomizing elements.</li>
+	<li class="l1"><i>Positions.</i>The game is made up of a series of positions, which can be considered games themselves.</li>
+	<li class="l1"><i>Options.</i>At each position, the two players have zero or more moves, or options, available to them.</li>
+	<li class="l1"><i>Finite.</i>The game must eventually end (one or both players have no <i>options</i> remaining.</li>
+</ul>
+<p class="p1">The two players in a game are usually called <i>Left</i> and <i>Right</i>, or <i>L</i> and <i>R</i>.  Typically, a combinatorial game
+			  conforms to the <i>Normal Play Convention</i>, in which a player is declared the "loser" when that player has no valid options
+			  available.  Chomp is unusual in this respect as it uses the <i>Mis&egrave;re Play Convention</i>.  Under this convention, the last
+			  player to move loses.  It is easy to see that Chomp would be no game at all under normal play, since any intelligent
+			  player would immediately "chomp" the entire board.</p><br>
+<p class="h2" id="#Strategy"><br>Strategy<br></p>
+<p class="p1"><br>It is proven that there is a winning strategy for Chomp: player 1 can always win with a perfect strategy.
+			  Because Chomp is symmetric (both players have the same set of available moves), the first player can always
+			  win by playing the winning strategy first. 
+		      In this sense, Chomp is a <i>solved game</i>, however the winning strategy for most boards is not known.  </p></br>
+
+<p class="h2" id="#Credits"><br>Credits<br></p>
+<p class="p1"><br>Program and Text: Doug Sartori</p></br>
+<p class="p1"><br>Art and Design: Amanda Sinasac</p></br>
+<p class="p1"><br>Foil texture by Agnes Periapse (http://www.flickr.com/photos/chaoslotus/)</p></br>
+</body>
+</html>
