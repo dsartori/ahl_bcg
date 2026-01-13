@@ -19,17 +19,17 @@ This fork adds a little infrastructure to make these classic games more accessib
 
 1. Build the Docker image:
    ```bash
-   docker build -t sst-basic .
+   docker build -t basic .
    ```
 
 2. Run a game:
    ```bash
-   docker run --rm -it sst-basic animal.bas
+   docker run --rm -it basic animal.bas
    ```
 
 3. List available games:
    ```bash
-   docker run --rm -it sst-basic
+   docker run --rm -it basic
    ```
 
 ### Running Modern Ports

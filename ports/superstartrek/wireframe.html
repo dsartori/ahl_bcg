@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Space Miner - UI Wireframe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Colors */
+            --primary-color: #1a1a2e;
+            --secondary-color: #16213e;
+            --accent-color: #0f3460;
+            --highlight-color: #e94560;
+            --success-color: #00ff00;
+            --warning-color: #ffaa00;
+            --danger-color: #ff0000;
+            --text-primary: #ffffff;
+            --text-secondary: #b0b0b0;
+            
+            /* Spacing */
+            --spacing-xs: 4px;
+            --spacing-sm: 8px;
+            --spacing-md: 16px;
+            --spacing-lg: 24px;
+            --spacing-xl: 32px;
+            
+            /* Font sizes */
+            --font-size-xs: 0.75rem;   /* 12px */
+            --font-size-sm: 0.875rem;  /* 14px */
+            --font-size-base: 1rem;    /* 16px */
+            --font-size-lg: 1.125rem;  /* 18px */
+            --font-size-xl: 1.25rem;   /* 20px */
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .game-container {
+            display: grid;
+            grid-template-columns: 200px 1fr 180px;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-sm);
+        }
+
+        /* Header */
+        .header {
+            grid-column: 1 / -1;
+            background: var(--primary-color);
+            border: 2px solid var(--accent-color);
+            border-radius: 8px;
+            padding: var(--spacing-md);
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .header h1 {
+            font-size: var(--font-size-xl);
+            color: var(--highlight-color);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            letter-spacing: 2px;
+        }
+
+        /* Status Panel */
+        .status-panel {
+            background: var(--secondary-color);
+            border: 2px solid var(--accent-color);
+            border-radius: 8px;
+            padding: var(--spacing-md);
+            overflow-y: auto;
+        }
+
+        .resource-item {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .resource-label {
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background: var(--primary-color);
+            border: 1px solid var(--accent-color);
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--success-color), #00cc00);
+            transition: width 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .progress-text {
+            font-size: var(--font-size-xs);
+            font-weight: bold;
+            color: var(--text-primary);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Game Grid */
+        .game-grid {
+            background: var(--secondary-color);
+            border: 2px solid var(--accent-color);
+            border-radius: 8px;
+            padding: var(--spacing-md);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sector-grid {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            gap: 2px;
+            width: 100%;
+            max-width: 600px;
+            aspect-ratio: 1;
+        }
+
+        .grid-cell {
+            background: var(--primary-color);
+            border: 1px solid var(--accent-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-base);
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            min-width: 40px;
+            min-height: 40px;
+        }
+
+        .grid-cell:hover {
+            background: var(--accent-color);
+            transform: scale(1.1);
+            z-index: 10;
+        }
+
+        .grid-cell.ship { color: var(--highlight-color); }
+        .grid-cell.raider { color: var(--danger-color); }
+        .grid-cell.station { color: var(--success-color); }
+        .grid-cell.asteroid { color: var(--text-secondary); }
+        .grid-cell.mineral { color: var(--warning-color); }
+
+        /* Info Panel */
+        .info-panel {
+            background: var(--secondary-color);
+            border: 2px solid var(--accent-color);
+            border-radius: 8px;
+            padding: var(--spacing-md);
+            overflow-y: auto;
+        }
+
+        .info-item {
+            margin-bottom: var(--spacing-md);
+            padding: var(--spacing-sm);
+            background: var(--primary-color);
+            border-radius: 4px;
+        }
+
+        .info-label {
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .info-value {
+            font-size: var(--font-size-base);
+            font-weight: bold;
+            color: var(--text-primary);
+        }
+
+        /* Command Panel */
+        .command-panel {
+            grid-column: 1 / -1;
+            background: var(--secondary-color);
+            border: 2px solid var(--accent-color);
+            border-radius: 8px;
+            padding: var(--spacing-md);
+            display: flex;
+            gap: var(--spacing-sm);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .command-button {
+            background: var(--primary-color);
+            border: 2px solid var(--accent-color);
+            border-radius: 6px;
+            padding: var(--spacing-sm) var(--spacing-md);
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: var(--font-size-sm);
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            min-width: 60px;
+            min-height: 44px;
+        }
+
+        .command-button:hover {
+            background: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .command-button:active {
+            transform: translateY(0);
+        }
+
+        .command-button.danger {
+            border-color: var(--danger-color);
+            color: var(--danger-color);
+        }
+
+        .command-button.danger:hover {
+            background: var(--danger-color);
+            color: var(--text-primary);
+        }
+
+        /* Tablet Layout */
+        @media (max-width: 1199px) {
+            .game-container {
+                grid-template-columns: 250px 1fr;
+            }
+            
+            .info-panel {
+                grid-column: 1 / -1;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: var(--spacing-sm);
+            }
+            
+            .sector-grid {
+                max-width: 350px;
+            }
+        }
+
+        /* Mobile Portrait */
+        @media (max-width: 767px) {
+            .game-container {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto 1fr auto auto;
+                padding: 2px;
+                gap: 2px;
+                height: 100vh;
+                overflow: hidden;
+            }
+            
+            .header {
+                padding: 4px;
+            }
+            
+            .header h1 {
+                font-size: 1rem;
+                margin: 0;
+                letter-spacing: 1px;
+            }
+            
+            .status-panel {
+                padding: 4px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 3px;
+                overflow: hidden;
+                max-height: 120px;
+            }
+            
+            .resource-item {
+                margin-bottom: 3px;
+            }
+            
+            .resource-label {
+                font-size: 0.6rem;
+                margin-bottom: 1px;
+            }
+            
+            .progress-bar {
+                height: 12px;
+            }
+            
+            .progress-text {
+                font-size: 0.5rem;
+            }
+            
+            .game-grid {
+                padding: 4px;
+                min-height: 250px;
+            }
+            
+            .sector-grid {
+                max-width: 100%;
+                margin: 0;
+                min-height: 240px;
+            }
+            
+            .grid-cell {
+                min-width: 28px;
+                min-height: 28px;
+                font-size: 0.65rem;
+            }
+            
+            .info-panel {
+                grid-template-columns: repeat(4, 1fr);
+                padding: 4px;
+                gap: 2px;
+                overflow: hidden;
+                max-height: 80px;
+            }
+            
+            .info-item {
+                margin-bottom: 2px;
+                padding: 2px;
+            }
+            
+            .info-label {
+                font-size: 0.55rem;
+                margin-bottom: 1px;
+            }
+            
+            .info-value {
+                font-size: 0.7rem;
+            }
+            
+            .command-panel {
+                grid-template-columns: repeat(3, 1fr);
+                padding: 4px;
+                gap: 2px;
+            }
+            
+            .command-button {
+                font-size: 0.7rem;
+                padding: 2px;
+                min-height: 35px;
+                min-width: 35px;
+            }
+            
+            /* Mobile font adjustments */
+            :root {
+                --font-size-xs: 0.625rem; /* 10px */
+                --font-size-sm: 0.75rem;   /* 12px */
+                --font-size-base: 0.875rem; /* 14px */
+                --font-size-lg: 1rem;      /* 16px */
+                --font-size-xl: 1.125rem;  /* 18px */
+            }
+        }
+
+        /* Mobile Landscape */
+        @media (max-width: 767px) and (orientation: landscape) {
+            .game-container {
+                grid-template-columns: 90px 1fr 110px;
+                grid-template-rows: auto 1fr auto;
+                gap: 2px;
+                height: 100vh;
+                overflow: hidden;
+            }
+            
+            .header {
+                padding: 4px;
+            }
+            
+            .header h1 {
+                font-size: 0.8rem;
+                margin: 0;
+            }
+            
+            .status-panel {
+                padding: 4px;
+                overflow: hidden;
+            }
+            
+            .resource-label {
+                font-size: 0.6rem;
+                margin-bottom: 1px;
+            }
+            
+            .resource-item {
+                margin-bottom: 2px;
+            }
+            
+            .progress-text {
+                font-size: 0.55rem;
+            }
+            
+            .progress-bar {
+                height: 14px;
+            }
+            
+            .game-grid {
+                padding: 4px;
+                min-height: 200px;
+            }
+            
+            .sector-grid {
+                min-height: 190px;
+            }
+            
+            .grid-cell {
+                min-width: 24px;
+                min-height: 24px;
+                font-size: 0.6rem;
+            }
+            
+            .command-panel {
+                grid-column: 3;
+                grid-row: 2;
+                flex-direction: column;
+                padding: 4px;
+                gap: 2px;
+            }
+            
+            .command-button {
+                min-height: 32px;
+                font-size: 0.7rem;
+                padding: 2px;
+            }
+            
+            .info-panel {
+                grid-column: 1 / -1;
+                grid-template-columns: repeat(5, 1fr);
+                padding: 4px;
+                gap: 2px;
+                overflow: hidden;
+            }
+            
+            .info-item {
+                padding: 2px;
+                margin-bottom: 2px;
+            }
+            
+            .info-label {
+                font-size: 0.55rem;
+                margin-bottom: 1px;
+            }
+            
+            .info-value {
+                font-size: 0.7rem;
+            }
+        }
+
+        /* Responsive typography adjustments */
+        @media (pointer: coarse) {
+            .command-button {
+                min-height: 44px;
+                min-width: 44px;
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+            
+            .grid-cell {
+                min-width: 32px;
+                min-height: 32px;
+            }
+        }
+
+        /* Animation for testing */
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+
+        .grid-cell.ship {
+            animation: pulse 2s infinite;
+        }
+
+        /* Debug info */
+        .debug-info {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="debug-info">
+        <div>Screen: <span id="screen-size"></span></div>
+        <div>Layout: <span id="layout-type"></span></div>
+    </div>
+
+    <div class="game-container">
+        <!-- Header -->
+        <header class="header">
+            <h1>⚡ MINING COMPUTER ⚡</h1>
+        </header>
+
+        <!-- Status Panel -->
+        <aside class="status-panel">
+            <div class="resource-item">
+                <div class="resource-label">⚡ FUEL</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 80%;">
+                        <span class="progress-text">800/1000</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-item">
+                <div class="resource-label">🛡️ SHIELDS</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 50%; background: linear-gradient(90deg, #ffaa00, #ff8800);">
+                        <span class="progress-text">500/1000</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-item">
+                <div class="resource-label">📦 CARGO</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 45%; background: linear-gradient(90deg, #00aaff, #0088cc);">
+                        <span class="progress-text">45/100</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-item">
+                <div class="resource-label">💎 MINERALS</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 30%; background: linear-gradient(90deg, #ff00ff, #cc00cc);">
+                        <span class="progress-text">300/1000</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-item">
+                <div class="resource-label">🔧 METAL</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 60%; background: linear-gradient(90deg, #888888, #666666);">
+                        <span class="progress-text">600/1000</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-item">
+                <div class="resource-label">🚀 MISSILES</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 70%; background: linear-gradient(90deg, #ff6600, #cc4400);">
+                        <span class="progress-text">7/10</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Game Grid -->
+        <main class="game-grid">
+            <div class="sector-grid" id="gameGrid">
+                <!-- Grid cells will be generated by JavaScript -->
+            </div>
+        </main>
+
+        <!-- Info Panel -->
+        <aside class="info-panel">
+            <div class="info-item">
+                <div class="info-label">📍 QUADRANT</div>
+                <div class="info-value">4, 7</div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-label">🎯 SECTOR</div>
+                <div class="info-value">3, 5</div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-label">📅 STARDATE</div>
+                <div class="info-value">2450.3</div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-label">👾 RAIDERS</div>
+                <div class="info-value">3</div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-label">🏭 STATIONS</div>
+                <div class="info-value">1</div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-label">⏱️ TIME LEFT</div>
+                <div class="info-value">12.7 days</div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-label">🏆 SCORE</div>
+                <div class="info-value">2,450</div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-label">⚙️ CONDITION</div>
+                <div class="info-value" style="color: #ffaa00;">YELLOW</div>
+            </div>
+        </aside>
+
+        <!-- Command Panel -->
+        <footer class="command-panel">
+            <button class="command-button">NAV</button>
+            <button class="command-button">MIN</button>
+            <button class="command-button">LAS</button>
+            <button class="command-button">MIS</button>
+            <button class="command-button">SHD</button>
+            <button class="command-button">DAM</button>
+            <button class="command-button">RES</button>
+            <button class="command-button">TRA</button>
+            <button class="command-button danger">XXX</button>
+        </footer>
+    </div>
+
+    <script>
+        // Generate grid with sample entities
+        function generateGrid() {
+            const grid = document.getElementById('gameGrid');
+            const gridSize = 64; // 8x8 grid
+            
+            // Sample entity positions
+            const entities = {
+                ship: { x: 3, y: 4, symbol: '🚀' },
+                raiders: [
+                    { x: 2, y: 2, symbol: '👾' },
+                    { x: 5, y: 6, symbol: '👾' }
+                ],
+                stations: [
+                    { x: 6, y: 3, symbol: '🛰️' }
+                ],
+                asteroids: [
+                    { x: 1, y: 1, symbol: '🪨' },
+                    { x: 4, y: 1, symbol: '🪨' },
+                    { x: 7, y: 5, symbol: '🪨' },
+                    { x: 2, y: 7, symbol: '🪨' }
+                ],
+                minerals: [
+                    { x: 5, y: 2, symbol: '💎' },
+                    { x: 1, y: 6, symbol: '💎' }
+                ]
+            };
+            
+            for (let i = 0; i < gridSize; i++) {
+
+                const cell = document.createElement('div');
+                cell.className = 'grid-cell';
+                
+                const x = i % 8;
+                const y = Math.floor(i / 8);
+                
+                // Check for entities at this position
+                let content = ' . ';
+                let cellClass = '';
+                
+                if (entities.ship.x === x && entities.ship.y === y) {
+                    content = entities.ship.symbol;
+                    cellClass = 'ship';
+                } else {
+                    // Check raiders
+                    for (const raider of entities.raiders) {
+                        if (raider.x === x && raider.y === y) {
+                            content = raider.symbol;
+                            cellClass = 'raider';
+                            break;
+                        }
+                    }
+                    
+                    // Check stations
+                    if (cellClass === '') {
+                        for (const station of entities.stations) {
+                            if (station.x === x && station.y === y) {
+                                content = station.symbol;
+                                cellClass = 'station';
+                                break;
+                            }
+                        }
+                    }
+                    
+                    // Check minerals
+                    if (cellClass === '') {
+                        for (const mineral of entities.minerals) {
+                            if (mineral.x === x && mineral.y === y) {
+                                content = mineral.symbol;
+                                cellClass = 'mineral';
+                                break;
+                            }
+                        }
+                    }
+                    
+                    // Check asteroids
+                    if (cellClass === '') {
+                        for (const asteroid of entities.asteroids) {
+                            if (asteroid.x === x && asteroid.y === y) {
+                                content = asteroid.symbol;
+                                cellClass = 'asteroid';
+                                break;
+                            }
+                        }
+                    }
+                }
+                
+                cell.textContent = content;
+                if (cellClass) {
+                    cell.classList.add(cellClass);
+                }
+                
+                // Add click handler for testing
+                cell.addEventListener('click', function() {
+                    console.log(`Clicked sector: ${x}, ${y}`);
+                    this.style.background = '#ff6600';
+                    setTimeout(() => {
+                        this.style.background = '';
+                    }, 200);
+                });
+                
+                grid.appendChild(cell);
+            }
+        }
+        
+        // Update debug info
+        function updateDebugInfo() {
+            const debugDiv = document.getElementById('screen-size');
+            const layoutDiv = document.getElementById('layout-type');
+            
+            debugDiv.textContent = `${window.innerWidth}x${window.innerHeight}`;
+            
+            let layout = 'Desktop';
+            if (window.innerWidth <= 767) {
+                layout = window.innerHeight > window.innerWidth ? 'Mobile Portrait' : 'Mobile Landscape';
+            } else if (window.innerWidth <= 1199) {
+                layout = 'Tablet';
+            }
+            
+            layoutDiv.textContent = layout;
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            generateGrid();
+            updateDebugInfo();
+            
+            // Update debug info on resize
+            window.addEventListener('resize', updateDebugInfo);
+            
+            // Add command button interactions
+            const commandButtons = document.querySelectorAll('.command-button');
+            commandButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const command = this.textContent;
+                    console.log(`Command activated: ${command}`);
+                    
+                    // Visual feedback
+                    this.style.background = '#ff6600';
+                    this.style.color = '#ffffff';
+                    setTimeout(() => {
+                        this.style.background = '';
+                        this.style.color = '';
+                    }, 300);
+                });
+            });
+            
+            // Simulate resource changes
+            setInterval(() => {
+                const progressFills = document.querySelectorAll('.progress-fill');
+                progressFills.forEach(fill => {
+                    const currentWidth = parseFloat(fill.style.width);
+                    const change = (Math.random() - 0.5) * 10; // +/- 5%
+                    const newWidth = Math.max(10, Math.min(100, currentWidth + change));
+                    fill.style.width = newWidth + '%';
+                    
+                    // Update text
+                    const text = fill.querySelector('.progress-text');
+                    if (text) {
+                        const maxValue = parseInt(text.textContent.split('/')[1]);
+                        const currentValue = Math.round(maxValue * newWidth / 100);
+                        text.textContent = `${currentValue}/${maxValue}`;
+                    }
+                });
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
