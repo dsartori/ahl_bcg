@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* dgolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* dgolViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* dgolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* dgolViewController.m */; };
+		4B699C74186396A30018A8C2 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B699C73186396A30018A8C2 /* iPhone.storyboard */; };
+		4B699C7718639CB90018A8C2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B699C7618639CB90018A8C2 /* Images.xcassets */; };
+		9138DE221434198000FDE7E5 /* cellButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9138DE211434198000FDE7E5 /* cellButton.m */; };
+		9138DE25143542F300FDE7E5 /* helpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9138DE24143542F300FDE7E5 /* helpView.m */; };
+		9138DE2F1435440E00FDE7E5 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 9138DE2E1435440E00FDE7E5 /* index.html */; };
+		9138DE3114354CC800FDE7E5 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 9138DE3014354CC800FDE7E5 /* info.png */; };
+		91409DE41437408600B12143 /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 91409DE31437408600B12143 /* refresh.png */; };
+		91409DE61437E0D800B12143 /* Blank Grid-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91409DE51437E0D800B12143 /* Blank Grid-ipad.plist */; };
+		91409DE81437E70400B12143 /* Pulsar-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91409DE71437E70400B12143 /* Pulsar-ipad.plist */; };
+		91409DEA1437E7AA00B12143 /* Pentadecathlon-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91409DE91437E7AA00B12143 /* Pentadecathlon-ipad.plist */; };
+		91409DED143808B400B12143 /* Spaceship.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91409DEB143808B400B12143 /* Spaceship.plist */; };
+		91409DEE143808B400B12143 /* Pentadecathlon.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91409DEC143808B400B12143 /* Pentadecathlon.plist */; };
+		91409DF0143808EF00B12143 /* Spaceship-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91409DEF143808EF00B12143 /* Spaceship-ipad.plist */; };
+		9150134C1619DA2F0093540B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9150134B1619DA2F0093540B /* Default-568h@2x.png */; };
+		9150135E1619DF020093540B /* cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 9150134D1619DF020093540B /* cell.png */; };
+		9150135F1619DF020093540B /* cell20.png in Resources */ = {isa = PBXBuildFile; fileRef = 9150134E1619DF020093540B /* cell20.png */; };
+		915013601619DF020093540B /* cell29.png in Resources */ = {isa = PBXBuildFile; fileRef = 9150134F1619DF020093540B /* cell29.png */; };
+		915013611619DF020093540B /* cell50.png in Resources */ = {isa = PBXBuildFile; fileRef = 915013501619DF020093540B /* cell50.png */; };
+		915013621619DF020093540B /* cell57.png in Resources */ = {isa = PBXBuildFile; fileRef = 915013511619DF020093540B /* cell57.png */; };
+		915013631619DF020093540B /* cell58.png in Resources */ = {isa = PBXBuildFile; fileRef = 915013521619DF020093540B /* cell58.png */; };
+		915013641619DF020093540B /* cell72.png in Resources */ = {isa = PBXBuildFile; fileRef = 915013531619DF020093540B /* cell72.png */; };
+		915013651619DF020093540B /* cell100.png in Resources */ = {isa = PBXBuildFile; fileRef = 915013541619DF020093540B /* cell100.png */; };
+		915013661619DF020093540B /* cell114.png in Resources */ = {isa = PBXBuildFile; fileRef = 915013551619DF020093540B /* cell114.png */; };
+		915013671619DF020093540B /* empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 915013561619DF020093540B /* empty.png */; };
+		915013681619DF020093540B /* empty20.png in Resources */ = {isa = PBXBuildFile; fileRef = 915013571619DF020093540B /* empty20.png */; };
+		915013691619DF020093540B /* empty50.png in Resources */ = {isa = PBXBuildFile; fileRef = 915013581619DF020093540B /* empty50.png */; };
+		9150136A1619DF020093540B /* empty100.png in Resources */ = {isa = PBXBuildFile; fileRef = 915013591619DF020093540B /* empty100.png */; };
+		9150136B1619DF020093540B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9150135A1619DF020093540B /* Icon.png */; };
+		9150136C1619DF020093540B /* Icon512.png in Resources */ = {isa = PBXBuildFile; fileRef = 9150135B1619DF020093540B /* Icon512.png */; };
+		9150136D1619DF020093540B /* iPadPortraitButtonBlank.png in Resources */ = {isa = PBXBuildFile; fileRef = 9150135C1619DF020093540B /* iPadPortraitButtonBlank.png */; };
+		9150136E1619DF020093540B /* iPhonePortraitButtonBlank.png in Resources */ = {isa = PBXBuildFile; fileRef = 9150135D1619DF020093540B /* iPhonePortraitButtonBlank.png */; };
+		9177157D1254392400072100 /* f Pentomino.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9177157C1254392400072100 /* f Pentomino.plist */; };
+		917715E7125542DE00072100 /* f Pentomino-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 917715E6125542DE00072100 /* f Pentomino-ipad.plist */; };
+		9177160D1256E41B00072100 /* Gosper Glider Gun-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9177160C1256E41B00072100 /* Gosper Glider Gun-ipad.plist */; };
+		9177163A12576D8500072100 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 9177163312576D8500072100 /* delete.png */; };
+		9177163B12576D8500072100 /* disk.png in Resources */ = {isa = PBXBuildFile; fileRef = 9177163412576D8500072100 /* disk.png */; };
+		9177163C12576D8500072100 /* fastforward.png in Resources */ = {isa = PBXBuildFile; fileRef = 9177163512576D8500072100 /* fastforward.png */; };
+		9177163D12576D8500072100 /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 9177163612576D8500072100 /* folder.png */; };
+		9177163E12576D8500072100 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 9177163712576D8500072100 /* play.png */; };
+		9177163F12576D8500072100 /* reload.png in Resources */ = {isa = PBXBuildFile; fileRef = 9177163812576D8500072100 /* reload.png */; };
+		9177164012576D8500072100 /* step.png in Resources */ = {isa = PBXBuildFile; fileRef = 9177163912576D8500072100 /* step.png */; };
+		91771657125775D200072100 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 91771656125775D200072100 /* pause.png */; };
+		917716BD1258498300072100 /* rewindtostart.png in Resources */ = {isa = PBXBuildFile; fileRef = 917716BC1258498300072100 /* rewindtostart.png */; };
+		917716C712584A6100072100 /* Blank Grid.plist in Resources */ = {isa = PBXBuildFile; fileRef = 917716C612584A6100072100 /* Blank Grid.plist */; };
+		91A2DFD6179DFF4E00F1A3D1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A2DFD5179DFF4E00F1A3D1 /* QuartzCore.framework */; };
+		91AE71071439029400E2BD41 /* Baker-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91AE70F91439029300E2BD41 /* Baker-ipad.plist */; };
+		91AE71081439029400E2BD41 /* Baker.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91AE70FA1439029300E2BD41 /* Baker.plist */; };
+		91AE71091439029400E2BD41 /* Bun-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91AE70FB1439029300E2BD41 /* Bun-ipad.plist */; };
+		91AE710A1439029400E2BD41 /* Bun.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91AE70FC1439029300E2BD41 /* Bun.plist */; };
+		91AE710B1439029400E2BD41 /* Clock-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91AE70FD1439029400E2BD41 /* Clock-ipad.plist */; };
+		91AE710C1439029400E2BD41 /* Clock.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91AE70FE1439029400E2BD41 /* Clock.plist */; };
+		91AE710D1439029400E2BD41 /* Eater 1-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91AE70FF1439029400E2BD41 /* Eater 1-ipad.plist */; };
+		91AE710E1439029400E2BD41 /* Eater 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91AE71001439029400E2BD41 /* Eater 1.plist */; };
+		91AE710F1439029400E2BD41 /* Phoenix-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91AE71011439029400E2BD41 /* Phoenix-ipad.plist */; };
+		91AE71101439029400E2BD41 /* Phoenix.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91AE71021439029400E2BD41 /* Phoenix.plist */; };
+		91AE71111439029400E2BD41 /* Quadpole-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91AE71031439029400E2BD41 /* Quadpole-ipad.plist */; };
+		91AE71121439029400E2BD41 /* Quadpole.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91AE71041439029400E2BD41 /* Quadpole.plist */; };
+		91AE71131439029400E2BD41 /* Tumbler-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91AE71051439029400E2BD41 /* Tumbler-ipad.plist */; };
+		91AE71141439029400E2BD41 /* Tumbler.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91AE71061439029400E2BD41 /* Tumbler.plist */; };
+		91AE711614392CF700E2BD41 /* Weekender-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91AE711514392CF700E2BD41 /* Weekender-ipad.plist */; };
+		91AE711814392E1900E2BD41 /* Schick Engine-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91AE711714392E1900E2BD41 /* Schick Engine-ipad.plist */; };
+		91B8E20A17987509004EA8A0 /* gridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B8E20917987509004EA8A0 /* gridView.m */; };
+		91D40CBC12329375005D404E /* GOLGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D40CBB12329375005D404E /* GOLGrid.m */; };
+		91D40CC112329380005D404E /* GOLCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D40CC012329380005D404E /* GOLCell.m */; };
+		91DDD0C71239A0590094B6AB /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DDD0C61239A0590094B6AB /* MainWindow-iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* simplelife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simplelife.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* dgolViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = dgolViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* dgolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dgolViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* dgolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dgolViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* simplelife_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simplelife_Prefix.pch; sourceTree = "<group>"; };
+		4B699C73186396A30018A8C2 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
+		4B699C7618639CB90018A8C2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* simplelife-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "simplelife-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		9138DE201434198000FDE7E5 /* cellButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellButton.h; sourceTree = "<group>"; };
+		9138DE211434198000FDE7E5 /* cellButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellButton.m; sourceTree = "<group>"; };
+		9138DE23143542F300FDE7E5 /* helpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpView.h; sourceTree = "<group>"; };
+		9138DE24143542F300FDE7E5 /* helpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = helpView.m; sourceTree = "<group>"; };
+		9138DE2E1435440E00FDE7E5 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		9138DE3014354CC800FDE7E5 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		91409DE31437408600B12143 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		91409DE51437E0D800B12143 /* Blank Grid-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Blank Grid-ipad.plist"; sourceTree = "<group>"; };
+		91409DE71437E70400B12143 /* Pulsar-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pulsar-ipad.plist"; sourceTree = "<group>"; };
+		91409DE91437E7AA00B12143 /* Pentadecathlon-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pentadecathlon-ipad.plist"; sourceTree = "<group>"; };
+		91409DEB143808B400B12143 /* Spaceship.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Spaceship.plist; sourceTree = "<group>"; };
+		91409DEC143808B400B12143 /* Pentadecathlon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Pentadecathlon.plist; sourceTree = "<group>"; };
+		91409DEF143808EF00B12143 /* Spaceship-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Spaceship-ipad.plist"; sourceTree = "<group>"; };
+		9150134B1619DA2F0093540B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9150134D1619DF020093540B /* cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cell.png; path = "dgol-img/cell.png"; sourceTree = "<group>"; };
+		9150134E1619DF020093540B /* cell20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cell20.png; path = "dgol-img/cell20.png"; sourceTree = "<group>"; };
+		9150134F1619DF020093540B /* cell29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cell29.png; path = "dgol-img/cell29.png"; sourceTree = "<group>"; };
+		915013501619DF020093540B /* cell50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cell50.png; path = "dgol-img/cell50.png"; sourceTree = "<group>"; };
+		915013511619DF020093540B /* cell57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cell57.png; path = "dgol-img/cell57.png"; sourceTree = "<group>"; };
+		915013521619DF020093540B /* cell58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cell58.png; path = "dgol-img/cell58.png"; sourceTree = "<group>"; };
+		915013531619DF020093540B /* cell72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cell72.png; path = "dgol-img/cell72.png"; sourceTree = "<group>"; };
+		915013541619DF020093540B /* cell100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cell100.png; path = "dgol-img/cell100.png"; sourceTree = "<group>"; };
+		915013551619DF020093540B /* cell114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cell114.png; path = "dgol-img/cell114.png"; sourceTree = "<group>"; };
+		915013561619DF020093540B /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = empty.png; path = "dgol-img/empty.png"; sourceTree = "<group>"; };
+		915013571619DF020093540B /* empty20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = empty20.png; path = "dgol-img/empty20.png"; sourceTree = "<group>"; };
+		915013581619DF020093540B /* empty50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = empty50.png; path = "dgol-img/empty50.png"; sourceTree = "<group>"; };
+		915013591619DF020093540B /* empty100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = empty100.png; path = "dgol-img/empty100.png"; sourceTree = "<group>"; };
+		9150135A1619DF020093540B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = "dgol-img/Icon.png"; sourceTree = "<group>"; };
+		9150135B1619DF020093540B /* Icon512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon512.png; path = "dgol-img/Icon512.png"; sourceTree = "<group>"; };
+		9150135C1619DF020093540B /* iPadPortraitButtonBlank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPadPortraitButtonBlank.png; path = "dgol-img/iPadPortraitButtonBlank.png"; sourceTree = "<group>"; };
+		9150135D1619DF020093540B /* iPhonePortraitButtonBlank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPhonePortraitButtonBlank.png; path = "dgol-img/iPhonePortraitButtonBlank.png"; sourceTree = "<group>"; };
+		9177157C1254392400072100 /* f Pentomino.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "f Pentomino.plist"; sourceTree = "<group>"; };
+		917715E6125542DE00072100 /* f Pentomino-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "f Pentomino-ipad.plist"; sourceTree = "<group>"; };
+		9177160C1256E41B00072100 /* Gosper Glider Gun-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Gosper Glider Gun-ipad.plist"; sourceTree = "<group>"; };
+		9177163312576D8500072100 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		9177163412576D8500072100 /* disk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disk.png; sourceTree = "<group>"; };
+		9177163512576D8500072100 /* fastforward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fastforward.png; sourceTree = "<group>"; };
+		9177163612576D8500072100 /* folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder.png; sourceTree = "<group>"; };
+		9177163712576D8500072100 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		9177163812576D8500072100 /* reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reload.png; sourceTree = "<group>"; };
+		9177163912576D8500072100 /* step.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step.png; sourceTree = "<group>"; };
+		91771656125775D200072100 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		917716BC1258498300072100 /* rewindtostart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rewindtostart.png; sourceTree = "<group>"; };
+		917716C612584A6100072100 /* Blank Grid.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Blank Grid.plist"; sourceTree = "<group>"; };
+		91A2DFD5179DFF4E00F1A3D1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		91AE70F91439029300E2BD41 /* Baker-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Baker-ipad.plist"; sourceTree = "<group>"; };
+		91AE70FA1439029300E2BD41 /* Baker.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Baker.plist; sourceTree = "<group>"; };
+		91AE70FB1439029300E2BD41 /* Bun-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Bun-ipad.plist"; sourceTree = "<group>"; };
+		91AE70FC1439029300E2BD41 /* Bun.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Bun.plist; sourceTree = "<group>"; };
+		91AE70FD1439029400E2BD41 /* Clock-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Clock-ipad.plist"; sourceTree = "<group>"; };
+		91AE70FE1439029400E2BD41 /* Clock.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Clock.plist; sourceTree = "<group>"; };
+		91AE70FF1439029400E2BD41 /* Eater 1-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Eater 1-ipad.plist"; sourceTree = "<group>"; };
+		91AE71001439029400E2BD41 /* Eater 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Eater 1.plist"; sourceTree = "<group>"; };
+		91AE71011439029400E2BD41 /* Phoenix-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Phoenix-ipad.plist"; sourceTree = "<group>"; };
+		91AE71021439029400E2BD41 /* Phoenix.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Phoenix.plist; sourceTree = "<group>"; };
+		91AE71031439029400E2BD41 /* Quadpole-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Quadpole-ipad.plist"; sourceTree = "<group>"; };
+		91AE71041439029400E2BD41 /* Quadpole.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Quadpole.plist; sourceTree = "<group>"; };
+		91AE71051439029400E2BD41 /* Tumbler-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Tumbler-ipad.plist"; sourceTree = "<group>"; };
+		91AE71061439029400E2BD41 /* Tumbler.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Tumbler.plist; sourceTree = "<group>"; };
+		91AE711514392CF700E2BD41 /* Weekender-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Weekender-ipad.plist"; sourceTree = "<group>"; };
+		91AE711714392E1900E2BD41 /* Schick Engine-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Schick Engine-ipad.plist"; sourceTree = "<group>"; };
+		91B8E20817987509004EA8A0 /* gridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gridView.h; sourceTree = "<group>"; };
+		91B8E20917987509004EA8A0 /* gridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gridView.m; sourceTree = "<group>"; };
+		91BC20E41235E3D000417C8B /* iPad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iPad-Info.plist"; sourceTree = "<group>"; };
+		91D40CBA12329375005D404E /* GOLGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GOLGrid.h; path = ../GOLGrid.h; sourceTree = "<group>"; };
+		91D40CBB12329375005D404E /* GOLGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GOLGrid.m; path = ../GOLGrid.m; sourceTree = "<group>"; };
+		91D40CBF12329380005D404E /* GOLCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GOLCell.h; path = ../GOLCell.h; sourceTree = "<group>"; };
+		91D40CC012329380005D404E /* GOLCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GOLCell.m; path = ../GOLCell.m; sourceTree = "<group>"; };
+		91DDD0C61239A0590094B6AB /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "Resources-iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91A2DFD6179DFF4E00F1A3D1 /* QuartzCore.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				91D40CBA12329375005D404E /* GOLGrid.h */,
+				91D40CBB12329375005D404E /* GOLGrid.m */,
+				91D40CBF12329380005D404E /* GOLCell.h */,
+				91D40CC012329380005D404E /* GOLCell.m */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* dgolViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* dgolViewController.m */,
+				91B8E20817987509004EA8A0 /* gridView.h */,
+				91B8E20917987509004EA8A0 /* gridView.m */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				9138DE24143542F300FDE7E5 /* helpView.m */,
+				9138DE23143542F300FDE7E5 /* helpView.h */,
+				9138DE201434198000FDE7E5 /* cellButton.h */,
+				9138DE211434198000FDE7E5 /* cellButton.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* simplelife.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				4B699C7618639CB90018A8C2 /* Images.xcassets */,
+				4B699C73186396A30018A8C2 /* iPhone.storyboard */,
+				91A2DFD5179DFF4E00F1A3D1 /* QuartzCore.framework */,
+				9150134B1619DA2F0093540B /* Default-568h@2x.png */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				91DDD0C51239A0590094B6AB /* Resources-iPad */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				91BC20E41235E3D000417C8B /* iPad-Info.plist */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* simplelife_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9150134D1619DF020093540B /* cell.png */,
+				9150134E1619DF020093540B /* cell20.png */,
+				9150134F1619DF020093540B /* cell29.png */,
+				915013501619DF020093540B /* cell50.png */,
+				915013511619DF020093540B /* cell57.png */,
+				915013521619DF020093540B /* cell58.png */,
+				915013531619DF020093540B /* cell72.png */,
+				915013541619DF020093540B /* cell100.png */,
+				915013551619DF020093540B /* cell114.png */,
+				915013561619DF020093540B /* empty.png */,
+				915013571619DF020093540B /* empty20.png */,
+				915013581619DF020093540B /* empty50.png */,
+				915013591619DF020093540B /* empty100.png */,
+				9150135A1619DF020093540B /* Icon.png */,
+				9150135B1619DF020093540B /* Icon512.png */,
+				9150135C1619DF020093540B /* iPadPortraitButtonBlank.png */,
+				9150135D1619DF020093540B /* iPhonePortraitButtonBlank.png */,
+				9138DE2E1435440E00FDE7E5 /* index.html */,
+				917716CA12584AEE00072100 /* icons */,
+				917716C912584ADA00072100 /* cells */,
+				917716C812584AB100072100 /* gridplists */,
+				917716AA125848F200072100 /* buttons */,
+				2899E5210DE3E06400AC0155 /* dgolViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* simplelife-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		917716AA125848F200072100 /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				91409DE31437408600B12143 /* refresh.png */,
+				9138DE3014354CC800FDE7E5 /* info.png */,
+				917716BC1258498300072100 /* rewindtostart.png */,
+				9177163312576D8500072100 /* delete.png */,
+				9177163412576D8500072100 /* disk.png */,
+				9177163512576D8500072100 /* fastforward.png */,
+				91771656125775D200072100 /* pause.png */,
+				9177163612576D8500072100 /* folder.png */,
+				9177163712576D8500072100 /* play.png */,
+				9177163812576D8500072100 /* reload.png */,
+				9177163912576D8500072100 /* step.png */,
+			);
+			name = buttons;
+			sourceTree = "<group>";
+		};
+		917716C812584AB100072100 /* gridplists */ = {
+			isa = PBXGroup;
+			children = (
+				91AE70F91439029300E2BD41 /* Baker-ipad.plist */,
+				91AE711714392E1900E2BD41 /* Schick Engine-ipad.plist */,
+				91AE711514392CF700E2BD41 /* Weekender-ipad.plist */,
+				91AE70FA1439029300E2BD41 /* Baker.plist */,
+				91AE70FB1439029300E2BD41 /* Bun-ipad.plist */,
+				91AE70FC1439029300E2BD41 /* Bun.plist */,
+				91AE70FD1439029400E2BD41 /* Clock-ipad.plist */,
+				91AE70FE1439029400E2BD41 /* Clock.plist */,
+				91AE70FF1439029400E2BD41 /* Eater 1-ipad.plist */,
+				91AE71001439029400E2BD41 /* Eater 1.plist */,
+				91AE71011439029400E2BD41 /* Phoenix-ipad.plist */,
+				91AE71021439029400E2BD41 /* Phoenix.plist */,
+				91AE71031439029400E2BD41 /* Quadpole-ipad.plist */,
+				91AE71041439029400E2BD41 /* Quadpole.plist */,
+				91AE71051439029400E2BD41 /* Tumbler-ipad.plist */,
+				91AE71061439029400E2BD41 /* Tumbler.plist */,
+				91409DE71437E70400B12143 /* Pulsar-ipad.plist */,
+				91409DEB143808B400B12143 /* Spaceship.plist */,
+				91409DEC143808B400B12143 /* Pentadecathlon.plist */,
+				91409DEF143808EF00B12143 /* Spaceship-ipad.plist */,
+				9177157C1254392400072100 /* f Pentomino.plist */,
+				91409DE91437E7AA00B12143 /* Pentadecathlon-ipad.plist */,
+				91409DE51437E0D800B12143 /* Blank Grid-ipad.plist */,
+				917716C612584A6100072100 /* Blank Grid.plist */,
+				917715E6125542DE00072100 /* f Pentomino-ipad.plist */,
+				9177160C1256E41B00072100 /* Gosper Glider Gun-ipad.plist */,
+			);
+			name = gridplists;
+			sourceTree = "<group>";
+		};
+		917716C912584ADA00072100 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = cells;
+			sourceTree = "<group>";
+		};
+		917716CA12584AEE00072100 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		91DDD0C51239A0590094B6AB /* Resources-iPad */ = {
+			isa = PBXGroup;
+			children = (
+				91DDD0C61239A0590094B6AB /* MainWindow-iPad.xib */,
+			);
+			name = "Resources-iPad";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Life */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Life" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Life;
+			productName = dgol;
+			productReference = 1D6058910D05DD3D006BFB54 /* simplelife.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = NFZ3A534AV;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "simplelife" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Life */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* dgolViewController.xib in Resources */,
+				91DDD0C71239A0590094B6AB /* MainWindow-iPad.xib in Resources */,
+				9177157D1254392400072100 /* f Pentomino.plist in Resources */,
+				4B699C7718639CB90018A8C2 /* Images.xcassets in Resources */,
+				917715E7125542DE00072100 /* f Pentomino-ipad.plist in Resources */,
+				9177160D1256E41B00072100 /* Gosper Glider Gun-ipad.plist in Resources */,
+				9177163A12576D8500072100 /* delete.png in Resources */,
+				9177163B12576D8500072100 /* disk.png in Resources */,
+				9177163C12576D8500072100 /* fastforward.png in Resources */,
+				9177163D12576D8500072100 /* folder.png in Resources */,
+				9177163E12576D8500072100 /* play.png in Resources */,
+				9177163F12576D8500072100 /* reload.png in Resources */,
+				9177164012576D8500072100 /* step.png in Resources */,
+				91771657125775D200072100 /* pause.png in Resources */,
+				917716BD1258498300072100 /* rewindtostart.png in Resources */,
+				917716C712584A6100072100 /* Blank Grid.plist in Resources */,
+				9138DE2F1435440E00FDE7E5 /* index.html in Resources */,
+				9138DE3114354CC800FDE7E5 /* info.png in Resources */,
+				91409DE41437408600B12143 /* refresh.png in Resources */,
+				4B699C74186396A30018A8C2 /* iPhone.storyboard in Resources */,
+				91409DE61437E0D800B12143 /* Blank Grid-ipad.plist in Resources */,
+				91409DE81437E70400B12143 /* Pulsar-ipad.plist in Resources */,
+				91409DEA1437E7AA00B12143 /* Pentadecathlon-ipad.plist in Resources */,
+				91409DED143808B400B12143 /* Spaceship.plist in Resources */,
+				91409DEE143808B400B12143 /* Pentadecathlon.plist in Resources */,
+				91409DF0143808EF00B12143 /* Spaceship-ipad.plist in Resources */,
+				91AE71071439029400E2BD41 /* Baker-ipad.plist in Resources */,
+				91AE71081439029400E2BD41 /* Baker.plist in Resources */,
+				91AE71091439029400E2BD41 /* Bun-ipad.plist in Resources */,
+				91AE710A1439029400E2BD41 /* Bun.plist in Resources */,
+				91AE710B1439029400E2BD41 /* Clock-ipad.plist in Resources */,
+				91AE710C1439029400E2BD41 /* Clock.plist in Resources */,
+				91AE710D1439029400E2BD41 /* Eater 1-ipad.plist in Resources */,
+				91AE710E1439029400E2BD41 /* Eater 1.plist in Resources */,
+				91AE710F1439029400E2BD41 /* Phoenix-ipad.plist in Resources */,
+				91AE71101439029400E2BD41 /* Phoenix.plist in Resources */,
+				91AE71111439029400E2BD41 /* Quadpole-ipad.plist in Resources */,
+				91AE71121439029400E2BD41 /* Quadpole.plist in Resources */,
+				91AE71131439029400E2BD41 /* Tumbler-ipad.plist in Resources */,
+				91AE71141439029400E2BD41 /* Tumbler.plist in Resources */,
+				91AE711614392CF700E2BD41 /* Weekender-ipad.plist in Resources */,
+				91AE711814392E1900E2BD41 /* Schick Engine-ipad.plist in Resources */,
+				9150134C1619DA2F0093540B /* Default-568h@2x.png in Resources */,
+				9150135E1619DF020093540B /* cell.png in Resources */,
+				9150135F1619DF020093540B /* cell20.png in Resources */,
+				915013601619DF020093540B /* cell29.png in Resources */,
+				915013611619DF020093540B /* cell50.png in Resources */,
+				915013621619DF020093540B /* cell57.png in Resources */,
+				915013631619DF020093540B /* cell58.png in Resources */,
+				915013641619DF020093540B /* cell72.png in Resources */,
+				915013651619DF020093540B /* cell100.png in Resources */,
+				915013661619DF020093540B /* cell114.png in Resources */,
+				915013671619DF020093540B /* empty.png in Resources */,
+				915013681619DF020093540B /* empty20.png in Resources */,
+				915013691619DF020093540B /* empty50.png in Resources */,
+				9150136A1619DF020093540B /* empty100.png in Resources */,
+				9150136B1619DF020093540B /* Icon.png in Resources */,
+				9150136C1619DF020093540B /* Icon512.png in Resources */,
+				9150136D1619DF020093540B /* iPadPortraitButtonBlank.png in Resources */,
+				9150136E1619DF020093540B /* iPhonePortraitButtonBlank.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* dgolViewController.m in Sources */,
+				91D40CBC12329375005D404E /* GOLGrid.m in Sources */,
+				91D40CC112329380005D404E /* GOLCell.m in Sources */,
+				9138DE221434198000FDE7E5 /* cellButton.m in Sources */,
+				9138DE25143542F300FDE7E5 /* helpView.m in Sources */,
+				91B8E20A17987509004EA8A0 /* gridView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = simplelife_Prefix.pch;
+				INFOPLIST_FILE = "simplelife-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = simplelife;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = simplelife_Prefix.pch;
+				INFOPLIST_FILE = "simplelife-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = simplelife;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9154922F123D54B100CD49BE /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CURRENT_PROJECT_VERSION = 1.0;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Distribution;
+		};
+		91549230123D54B100CD49BE /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = simplelife_Prefix.pch;
+				INFOPLIST_FILE = "simplelife-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = simplelife;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CURRENT_PROJECT_VERSION = 1.0;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Life" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				91549230123D54B100CD49BE /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Distribution;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "simplelife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				9154922F123D54B100CD49BE /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Distribution;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
